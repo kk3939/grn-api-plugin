@@ -1,0 +1,31 @@
+{
+  "manifest_version": 1,
+  "version": "1.0.0",
+  "target_applications": ["ALL"],
+  "impacted_applications": ["ALL"],
+  "name": {
+    "ja": "grn-api-plugin",
+    "en": "grn-api-plugin"
+  },
+  "description": {
+    "ja": "grn-api-plugin",
+    "en": "grn-api-plugin"
+  },
+  "icon": "src/assets/icon.png",
+  "desktop": {
+    "js": [
+      "build/grn-api-plugin-desktop.js"
+    ]
+  },
+  "homepage_url": {
+    "ja": "https://github.com/kk3939/grn-api-plugin#readme",
+    "en": "https://github.com/kk3939/grn-api-plugin#readme"
+},
+  "config": {
+    "html": "src/assets/index.html",
+    "js": [
+      "build/grn-api-plugin-config.js"
+    ]
+  },
+  "plugin_code": "grn.api.plugin"
+}

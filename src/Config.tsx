@@ -1,7 +1,8 @@
 import { createRoot } from "react-dom/client";
 
-import { ConfigComponent } from "./ConfigComponent";
+import { ConfigRoot } from "./ConfigRoot";
 import React, { StrictMode } from "react";
+import { ChakraProvider } from "@chakra-ui/react";
 
 (() => {
   "use strict";
@@ -10,7 +11,9 @@ import React, { StrictMode } from "react";
   const root = createRoot(container!);
   root.render(
     <StrictMode>
-      <ConfigComponent />
+      <ChakraProvider>
+        <ConfigRoot />
+      </ChakraProvider>
     </StrictMode>,
   );
 })();
